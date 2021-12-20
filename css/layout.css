@@ -17,27 +17,27 @@ body {
 
 .left {
     grid-area: a;
-    background-color: #801336;
+    background-color: #f3f1ef;
 }
 
 .header {
     grid-area: b;
-    background-color: #2d142c;
+    background-color: #f3f1ef;
 }
 
 .main {
     grid-area: c;
-    background-color: #2d142c;
+    background-color: #f3f1ef;
 }
 
 .right {
     grid-area: d;
-    background-color: #801336;
+    background-color: #f3f1ef;
 }
 
 .footer {
     grid-area: e;
-    background-color: #2d142c;
+    background-color: #f3f1ef;
 }
 
 /* Extra maži įrenginiai (telefonai, 600px ir žemiau) */
@@ -137,14 +137,16 @@ body {
     float: left;
     font-family: "Montserrat", sans-serif;
     font-size: 15px;
-    color: #ee4540;
+    color: #413f3d;
     text-align: center;
     padding: 30px;
     text-transform: uppercase;
     font-weight: 30;
     text-decoration: none;
+    transition: transform 4s;
 }
 
 .navbar a:hover {
-    color: #801336;
+    color: #b1a6a4;
+    transform: rotate(360deg);
 }
