@@ -9,9 +9,10 @@
 
 .topStories {
     display: grid;
+    /*width: 300px;*/
     grid-template-rows: 300px 300px;
-    grid-template-columns: 2fr 2fr 2fr;
-    grid-gap: 40px;
+    grid-template-columns: 100px 100px 100px;
+    grid-gap: 60px;
     text-align: center;
     /*font-family: "Montserrat", sans-serif;*/
     font-size: 20px;
@@ -19,8 +20,8 @@
     padding: 30px;
     /*text-transform: uppercase;*/
     grid-template-areas:
-    'a b c'
-    'a b c'
+    'a b b'
+    'a b b'
 }
 
 .Story1 {
@@ -28,6 +29,10 @@
     background-color: #f3f1ef;
     box-shadow: -10px 10px 30px rgba(0, 0, 0, 0.3);
     transition: .5s;
+}
+
+.Story1 a, .Story2 a, .Story3 a{
+    margin: 20px;
 }
 
 .Story2 {
@@ -47,7 +52,7 @@
 #moreNews {
     display: grid;
     grid-template-rows: 300px 300px;
-    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-columns: 150px 150px 150px;
     grid-gap: 40px;
     text-align: center;
     /*font-family: "Montserrat", sans-serif;*/
@@ -205,8 +210,8 @@
         padding: 30px;
         /*text-transform: uppercase;*/
         grid-template-areas:
-    'a b c'
-    'a b c'
+    'a b b'
+    'a b b'
     }
 
 }
@@ -215,7 +220,7 @@
 @media only screen and (min-width: 992px) {
     .topStories {
         display: grid;
-        grid-template-rows: 300px 300px;
+        grid-template-rows: 400px 400px;
         grid-template-columns: 2fr 2fr 2fr;
         grid-gap: 40px;
         text-align: center;
@@ -230,7 +235,7 @@
     }
     #moreNews {
         display: grid;
-        grid-template-rows: 300px 300px;
+        grid-template-rows: 400px 400px;
         grid-template-columns: 2fr 2fr 2fr;
         grid-gap: 40px;
         text-align: center;
@@ -249,9 +254,10 @@
 @media only screen and (min-width: 1200px) {
     .topStories {
         display: grid;
+        width: 100%;
         grid-template-rows: 300px 300px;
-        grid-template-columns: 2fr 2fr 2fr;
-        grid-gap: 40px;
+        grid-template-columns: 350px 350px 350px;
+        grid-gap: 60px;
         text-align: center;
         /*font-family: "Montserrat", sans-serif;*/
         font-size: 20px;

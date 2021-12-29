@@ -107,14 +107,14 @@ body {
         display: grid;
         height: 100%;
         width: 100%;
-        grid-template-rows: 1fr auto auto 1fr;
-        grid-template-columns: 1fr 6fr 1fr;
+        grid-template-rows: 2fr auto 1fr 1fr;
+        grid-template-columns: 1fr 5fr;
         /*grid-gap: 15px;*/
         grid-template-areas:
-        'a b d'
-        'a c d'
-        'a c d'
-        'a e d'
+        'a b'
+        'a c'
+        'a d'
+        'a e'
     }
     aside.right {
         display: block;

@@ -29,7 +29,7 @@ try {
     $password = $_POST['password'];
     $stmt->execute();
 
-    echo "You've signed up successfully!";
+    echo "You've signed up successfully! Please go back! :)";
 } catch (PDOException $e) {
     echo "Error: " . $e->getMessage();
 }

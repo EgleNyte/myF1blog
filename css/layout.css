@@ -6,8 +6,9 @@ html, body {
 body {
     display: grid;
     height: 100%;
+    width: 100%;
     grid-template-rows: 10% auto 8%;
-    grid-template-columns: 8% auto 8%;
+    grid-template-columns: 8% auto 3%;
     /*grid-gap: 5px;*/
     grid-template-areas:
         'b b b'
@@ -29,7 +30,6 @@ body {
 .main {
     grid-area: c;
     background-color: white;
-    text-align: center;
 }
 
 .right {
@@ -109,12 +109,20 @@ body {
         /*grid-gap: 15px;*/
         grid-template-areas:
         'a a a'
-        'c c d'
-        'c c d'
-        'c c d'
+        'c c c'
+        'c c c'
+        'c c c'
     }
-    aside.right, aside.left {
+    aside.left {
         display: inline-block;
+    }
+
+    aside.right {
+        display: none;
+    }
+
+    main {
+        text-align: center;
     }
 }
 
@@ -127,9 +135,9 @@ body {
         grid-template-columns: 15% auto 15%;
         /*grid-gap: 25px;*/
         grid-template-areas:
-        'a b b'
+        'b b b'
         'a c d'
-        'a e e';
+        'a e d';
     }
     aside.right, aside.left {
         display: inline-block;
