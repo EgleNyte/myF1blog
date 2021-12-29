@@ -5,24 +5,62 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/layout.css">
+        <link rel="stylesheet" href="css/teamsDesign.css">
+        <link rel="stylesheet" href="css/accountDesign.css">
     </head>
     <body>
         <aside class="cele left">
+            <div class="schedule"><br><br><br>
+                <button class="dropbtn">Schedule</button>
+                <div class="dropdown-content">
+                    <a href="https://www.formula1.com/en/racing/2022/Bahrain.html">NEXT: Bahrain 2022</a>
+                    <a href="https://www.formula1.com/en/racing/2022/Saudi_Arabia.html">UPCOMING: Saudi Arabia 2022</a>
+                    <a href="https://www.formula1.com/en/racing/2022/Australia.html">UPCOMING: Australia 2022</a>
+                    <a href="https://www.formula1.com/en/racing/2022/EmiliaRomagna.html">UPCOMING: Italy 2022</a>
+                    <a href="https://www.formula1.com/en/racing/2022/Miami.html">UPCOMING: United States 2022</a>
+                    <a href="https://www.formula1.com/en/racing/2022.html">FULL SCHEDULE 2022...</a>
+                </div>
+            </div>
+            <div class="standings">
+                <button class="dropbtn">Standings</button>
+                <div class="dropdown-content">
+                    <a href="https://www.formula1.com/en/results.html/2021/drivers.html">Driver Standings</a>
+                    <a href="https://www.formula1.com/en/results.html/2021/team.html">Constructor Standings</a>
+                </div>
+            </div>
         </aside>
         <header class="cele header">
-            <div class="navbar">
+            <div class="navbar" id="navbar">
                 <a href="index.html">Home</a>
                 <a href="news.html">News</a>
                 <a href="drivers.html">Drivers</a>
+                <a href="edits.html">Edits</a>
                 <a href="about.html">About</a>
                 <a href="account.html">Account</a>
             </div>
         </header>
         <main class="cele main">
+            <div class="teamsListing">
+                <h4>
+                    <ol>
+                        <li class="Mercedes"><img src="https://www.formula1.com/content/dam/fom-website/teams/2021/mercedes.png.transform/6col-retina/image.png" alt="Mercedes" width="400px">Mercedes</li>
+                        <li class="RedBull"><img src="https://www.formula1.com/content/dam/fom-website/teams/2021/red-bull-racing.png.transform/6col-retina/image.png" alt="Red Bull" width="400px">Red Bull <br> Racing</li>
+                        <li class="Ferrari"><img src="https://www.formula1.com/content/dam/fom-website/teams/2021/ferrari.png.transform/6col-retina/image.png" alt="Ferrari" width="400px">Ferrari</li>
+                        <li class="McLaren"><img src="https://www.formula1.com/content/dam/fom-website/teams/2021/mclaren.png.transform/6col-retina/image.png" alt="McLaren" width="400px">McLaren</li>
+                        <li class="Alpine"><img src="https://www.formula1.com/content/dam/fom-website/teams/2021/alpine.png.transform/6col-retina/image.png" alt="Alpine" width="400px">Alpine</li>
+                        <li class="AlphaTauri"><img src="https://www.formula1.com/content/dam/fom-website/teams/2021/alphatauri.png.transform/6col-retina/image.png" alt="AlphaTauri" width="400px">AlphaTauri</li>
+                        <li class="AstonMartin"><img src="https://www.formula1.com/content/dam/fom-website/teams/2021/aston-martin.png.transform/6col-retina/image.png" alt="Aston Martin" width="400px">Aston Martin</li>
+                        <li class="Williams"><img src="https://www.formula1.com/content/dam/fom-website/teams/2021/williams.png.transform/6col-retina/image.png" alt="Williams" width="400px">Williams</li>
+                        <li class="AlfaRomeoRacing"><img src="https://www.formula1.com/content/dam/fom-website/teams/2021/alfa-romeo-racing.png.transform/6col-retina/image.png" alt="Alfa Romeo Racing" width="400px">Alfa Romeo <br> Racing</li>
+                        <li class="HaasTeam"><img src="https://www.formula1.com/content/dam/fom-website/teams/2021/haas-f1-team.png.transform/6col-retina/image.png" alt="Haas F1 Team" width="400px">Haas F1 Team</li>
+                    </ol>
+                </h4>
+            </div>
         </main>
         <aside class="cele right"></aside>
+        <button onclick="topFunction()" id="myArrow" title="Go to top">Top</button>
         <footer class="cele footer">
-            Designed by Egle Kukucionyte<br>
         </footer>
+        <script src="js/arrowAnimation.js"></script>
     </body>
 </html>

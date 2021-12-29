@@ -4,26 +4,49 @@
         <title>About</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/layout.css">
+        <link rel="stylesheet" href="css/aboutLayout.css">
+        <link rel="stylesheet" href="css/aboutDesign.css">
     </head>
     <body>
         <aside class="cele left">
 
         </aside>
         <header class="cele header">
-            <div class="navbar">
+            <div class="navbar" id="navbar">
                 <a href="index.html">Home</a>
                 <a href="news.html">News</a>
                 <a href="drivers.html">Drivers</a>
                 <a href="teams.html">Teams</a>
+                <a href="edits.html">Edits</a>
                 <a href="account.html">Account</a>
             </div>
         </header>
-        <main class="cele main"></main>
-        <aside class="cele right"></aside>
+        <main class="cele main">
+            <div class="about">
+                <h1>
+                    Welcome to my F1 blog <br>
+                </h1>
+                <h3>
+                    My name is Egle and this is my Formula 1 blog. I started watching Formula 1 13 years ago. <br>
+                    My dad is a huge fan, so because of him I watched my first race ever and felt in love with it. <br>
+                    Until this day, we both support Lewis Hamilton. <br> <br> <hr>
+                </h3>
+            </div>
+            <div class="myPictures">
+                <img class="nuotrauka1" src="images/meAndTrack.png" width="500" heigh="500"/>
+                <img class="nuotrauka2" src="images/meAndLewis.png" width="500" heigh="500"/>
+                <img class="nuotrauka3" src="images/meAndDad.png" width="500" heigh="500"/>
+                <img class="nuotrauka4" src="images/meAndPodium.png" width="500" heigh="500"/>
+                <img class="nuotrauka5" src="images/meAndSis.png" width="500" heigh="500"/>
+            </div>
+        </main>
+        <aside class="cele right">
+            <button onclick="topFunction()" id="myArrow" title="Go to top">Top</button>
+        </aside>
         <footer class="cele footer">
-            Designed by Egle Kukucionyte<br>
         </footer>
         </aside>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/arrowAnimation.js"></script>
     </body>
 </html>

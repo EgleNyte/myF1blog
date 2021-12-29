@@ -1,6 +1,6 @@
 body {
     height: 100%;
-    background: #f3f1ef;
+    background-image: url("../images/resized.jpeg");
     font-family: "Montserrat", sans-serif;
 }
 
@@ -17,13 +17,91 @@ body {
     text-decoration: none;
     font-size: 30px;
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 350;
     display: inline-block;
-    padding: 40px;
+    padding: 30px;
     transition: transform 4s;
 }
 
 .navMenu a:hover {
-    color: #b1a6a4;
-    transform: rotate(360deg);
+    color: #413f3d;
+    box-shadow: -10px 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.navMenu h4 {
+    color: #413f3d;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 10px;
+    font-size: 40px;
+}
+
+/* Extra maži įrenginiai (telefonai, 600px ir žemiau) */
+@media only screen and (max-width: 600px) {
+    nav.navMenu a {
+        color: #413f3d;
+        text-decoration: none;
+        font-size: 30px;
+        text-transform: uppercase;
+        font-weight: 350;
+        display: inline-block;
+        padding: 40px;
+        transition: transform 4s;
+    }
+}
+
+/* Maži įrenginiai (statmenos planšetės, ar gulsti telefonai 600px ir aukščiau) */
+@media only screen and (min-width: 600px) {
+    nav.navMenu a {
+        color: #413f3d;
+        text-decoration: none;
+        font-size: 30px;
+        text-transform: uppercase;
+        font-weight: 350;
+        display: block;
+        padding: 40px;
+        transition: transform 4s;
+    }
+}
+
+/* Vidutiniai įrenginiai (gulsčios planšetės ar maži laptopai, 768px ir aukščiau) */
+@media only screen and (min-width: 768px) {
+    nav.navMenu a {
+        color: #413f3d;
+        text-decoration: none;
+        font-size: 30px;
+        text-transform: uppercase;
+        font-weight: 250;
+        display: block;
+        padding: 30px;
+        transition: transform 4s;
+    }
+}
+
+/* Dideli įrenginiai (laptopai, staliniai PC, 992px ir aukščiau) */
+@media only screen and (min-width: 992px) {
+    nav.navMenu a {
+        color: #413f3d;
+        text-decoration: none;
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: 200;
+        display: inline-block;
+        padding: 20px;
+        transition: transform 4s;
+    }
+}
+
+/* Extra dideli įrenginiai (dideli laptopai ir stalinai PC, 1200px ir aukščiau) */
+@media only screen and (min-width: 1200px) {
+    nav.navMenu a {
+        color: #413f3d;
+        text-decoration: none;
+        font-size: 25px;
+        text-transform: uppercase;
+        font-weight: 345;
+        display: inline-block;
+        padding: 20px;
+        transition: transform 4s;
+    }
 }

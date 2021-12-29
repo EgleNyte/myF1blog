@@ -1,0 +1,30 @@
+.teamsListing li {
+    display: inline-flex;
+    padding: 50px;
+}
+
+h4 {
+    color: #413f3d;
+    text-shadow: 2px 2px 4px white;
+}
+
+#navbar {
+    position: fixed;
+    transition: top 0.3s;
+    background-color: #f3f1ef;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+/*.Mercedes, .RedBull, .Ferrari, .McLaren, .Alpine, .AlphaTauri, .AstonMartin, .Williams, .AlfaRomeoRacing, .HaasTeam {*/
+/*    overflow: hidden;*/
+/*}*/
+
+/*.Mercedes img, .RedBull img, .Ferrari img, .McLaren img, .Alpine img, .AlphaTauri img, .AstonMartin img, .Williams img, .AlfaRomeoRacing img, .HaasTeam img {*/
+/*    transition: 0.8s all ease-in-out;*/
+/*}*/
+
+/*.Mercedes img:hover, .RedBull img:hover, .Ferrari img:hover, .McLaren img:hover, .Alpine img:hover, .AlphaTauri img:hover, .AstonMartin img:hover, .Williams img:hover, .AlfaRomeoRacing img:hover, .HaasTeam img:hover {*/
+/*    transform: scale(1.5);*/
+/*}*/

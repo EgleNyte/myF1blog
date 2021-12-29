@@ -1,34 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Account</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/layout.css">
-</head>
-<body>
-<aside class="cele left">
-</aside>
-<header class="cele header">
-    <div class="navbar">
-        <a href="index.html">Home</a>
-        <a href="news.html">News</a>
-        <a href="drivers.html">Drivers</a>
-        <a href="teams.html">Teams</a>
-        <a href="about.html">About</a>
-    </div>
-</header>
-<main class="cele main">
-    <h2> Log in to your account: <br> </h2>
-    <form action="login.php" method="post">
-        <input type="text" name="username" placeholder="Your username" required><br>
-        <input type="password" name="password" placeholder="Your password" required><br><br>
-        <input type="submit" value="Submit">
-    </form>
-</main>
-<aside class="cele right"></aside>
-<footer class="cele footer">
-    Designed by Egle Kukucionyte<br>
-</footer>
-</body>
+    <head>
+        <title>Account</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/layout.css">
+        <link rel="stylesheet" href="css/accountDesign.css">
+        <link rel="stylesheet" href="css/prisijungimu.css">
+    </head>
+    <body>
+        <aside class="cele left">
+            <div class="schedule"><br><br><br>
+                <button class="dropbtn">Schedule</button>
+                <div class="dropdown-content">
+                    <a href="https://www.formula1.com/en/racing/2022/Bahrain.html">NEXT: Bahrain 2022</a>
+                    <a href="https://www.formula1.com/en/racing/2022/Saudi_Arabia.html">UPCOMING: Saudi Arabia 2022</a>
+                    <a href="https://www.formula1.com/en/racing/2022/Australia.html">UPCOMING: Australia 2022</a>
+                    <a href="https://www.formula1.com/en/racing/2022/EmiliaRomagna.html">UPCOMING: Italy 2022</a>
+                    <a href="https://www.formula1.com/en/racing/2022/Miami.html">UPCOMING: United States 2022</a>
+                    <a href="https://www.formula1.com/en/racing/2022.html">FULL SCHEDULE 2022...</a>
+                </div>
+            </div>
+            <div class="standings">
+                <button class="dropbtn">Standings</button>
+                <div class="dropdown-content">
+                <a href="https://www.formula1.com/en/results.html/2021/drivers.html">Driver Standings</a>
+                <a href="https://www.formula1.com/en/results.html/2021/team.html">Constructor Standings</a>
+                </div>
+            </div>
+        </aside>
+        <header class="cele header">
+            <div class="navbar" id="navbar">
+                <a href="index.html">Home</a>
+                <a href="news.html">News</a>
+                <a href="drivers.html">Drivers</a>
+                <a href="teams.html">Teams</a>
+                <a href="edits.html">Edits</a>
+                <a href="about.html">About</a>
+            </div>
+        </header>
+        <main class="cele main">
+            <div id="formaLogIn">
+                <div id="logIn"><h2> Log in to your account: <br> </h2></div>
+                <br><br><br><form action="login.php" method="post">
+                    <input type="text" name="username" placeholder="Your username" required><br>
+                    <input type="password" name="password" placeholder="Your password" required><br><br>
+                    <input type="submit" value="Submit">
+                </form><br><br><br>
+            </div>
+            <div id="orDiv">OR...</div>
+            <div id="formaSignUp">
+                <div id="signUp"><h2>Sign Up:</h2></div>
+                <br><br><br><form action="insert_data.php" method="post">
+                    <input type="text" name="firstname" placeholder="First name"><br>
+                    <input type="text" name="username" placeholder="Username"><br>
+                    <input type="email" name="email" placeholder="Email address"><br>
+                    <input type="password" name="password" placeholder="Password"> <br><br>
+                    <input type="submit" value="Sign Up">
+                </form><br><br><br>
+            </div>
+        </main>
+        <aside class="cele right">
+            <button onclick="topFunction()" id="myArrow" title="Go to top">Top</button>
+        </aside>
+        <footer class="cele footer">
+        </footer>
+        <script src="js/arrowAnimation.js"></script>
+    </body>
 </html>

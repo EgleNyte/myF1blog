@@ -11,3 +11,9 @@ if (
     $_SESSION['arPrisijunges'] = true;
     header("Location: http://localhost/admin/index.php");
 }
+
+else {
+    // Nukreipia lankytoją į prisijungimo skriptą
+    header("Location: http://localhost/account.html");
+}
+

@@ -20,9 +20,11 @@ session_destroy();
     <body>
 
         <nav class="navMenu">
-            <a href="index.html" class="goBack">Please go back to the main page</a>
+            <h4>
+                Please go back to the
+            </h4>
+            <a href="index.php" class="goBack">main page</a>
         </nav>
-
     </body>
 
 

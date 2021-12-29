@@ -5,23 +5,74 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/layout.css">
+        <link rel="stylesheet" href="css/dizainas.css">
+        <link rel="stylesheet" href="css/accountDesign.css">
     </head>
     <body>
         <aside class="cele left">
+            <div class="schedule"><br><br><br>
+                <button class="dropbtn">Schedule</button>
+                <div class="dropdown-content">
+                    <a href="https://www.formula1.com/en/racing/2022/Bahrain.html">NEXT: Bahrain 2022</a>
+                    <a href="https://www.formula1.com/en/racing/2022/Saudi_Arabia.html">UPCOMING: Saudi Arabia 2022</a>
+                    <a href="https://www.formula1.com/en/racing/2022/Australia.html">UPCOMING: Australia 2022</a>
+                    <a href="https://www.formula1.com/en/racing/2022/EmiliaRomagna.html">UPCOMING: Italy 2022</a>
+                    <a href="https://www.formula1.com/en/racing/2022/Miami.html">UPCOMING: United States 2022</a>
+                    <a href="https://www.formula1.com/en/racing/2022.html">FULL SCHEDULE 2022...</a>
+                </div>
+            </div>
+            <div class="standings">
+                <button class="dropbtn">Standings</button>
+                <div class="dropdown-content">
+                    <a href="https://www.formula1.com/en/results.html/2021/drivers.html">Driver Standings</a>
+                    <a href="https://www.formula1.com/en/results.html/2021/team.html">Constructor Standings</a>
+                </div>
+            </div>
         </aside>
         <header class="cele header">
-            <div class="navbar">
+            <div class="navbar" id="navbar">
                 <a href="index.html">Home</a>
                 <a href="news.html">News</a>
                 <a href="teams.html">Teams</a>
+                <a href="edits.html">Edits</a>
                 <a href="about.html">About</a>
                 <a href="account.html">Account</a>
             </div>
         </header>
-        <main class="cele main"></main>
-        <aside class="cele right"></aside>
+        <main class="cele main">
+            <div class="driversListing">
+                <h3>
+                <ol>
+                    <li class="max"><img src="https://www.formula1.com/content/fom-website/en/drivers/max-verstappen/_jcr_content/image.img.640.medium.jpg/1617101447981.jpg" alt="Max" width="150">Max Verstappen<h4>33</h4><h5>Red Bull Racing</h5></li>
+                    <li class="lewis"><img src="https://www.formula1.com/content/fom-website/en/drivers/lewis-hamilton/_jcr_content/image.img.640.medium.jpg/1617101457462.jpg" alt="Lewis" width="150">Lewis Hamilton<h4>44</h4><h5>Mercedes</h5></li>
+                    <li class="valtteri"><img src="https://www.formula1.com/content/fom-website/en/drivers/valtteri-bottas/_jcr_content/image.img.640.medium.jpg/1617101457255.jpg" alt="Valtteri" width="150">Valtteri Bottas<h4>77</h4><h5>Mercedes</h5></li>
+                    <li class="sergio"><img src="https://www.formula1.com/content/fom-website/en/drivers/sergio-perez/_jcr_content/image.img.640.medium.jpg/1617101446970.jpg" alt="Sergio" width="150">Sergio Perez<h4>11</h4><h5>Red Bull Racing</h5></li>
+                    <li class="carlos"><img src="https://www.formula1.com/content/fom-website/en/drivers/carlos-sainz/_jcr_content/image.img.640.medium.jpg/1617101457421.jpg" alt="Carlos" width="150">Carlos Sainz<h4>55</h4><h5>Ferrari</h5></li>
+                    <li class="lando"><img src="https://www.formula1.com/content/fom-website/en/drivers/lando-norris/_jcr_content/image.img.320.medium.jpg" alt="Lando" width="150">Lando Norris<h4>4</h4><h5>McLaren</h5></li>
+                    <li class="charles"><img src="https://www.formula1.com/content/fom-website/en/drivers/charles-leclerc/_jcr_content/image.img.640.medium.jpg/1617101453619.jpg" alt="Charles" width="150">Charles Leclerc<h4>16</h4><h5>Ferrari</h5></li>
+                    <li class="daniel"><img src="https://www.formula1.com/content/fom-website/en/drivers/daniel-ricciardo/_jcr_content/image.img.640.medium.jpg/1617101458318.jpg" alt="Daniel" width="150">Daniel Ricciardo<h4>3</h4><h5>McLaren</h5></li>
+                    <li class="pierre"><img src="https://www.formula1.com/content/fom-website/en/drivers/pierre-gasly/_jcr_content/image.img.640.medium.jpg/1617101447487.jpg" alt="Pierre" width="150">Pierre Gasly<h4>10</h4><h5>AlphaTauri</h5></li>
+                    <li class="fernando"><img src="https://www.formula1.com/content/fom-website/en/drivers/fernando-alonso/_jcr_content/image.img.640.medium.jpg/1617101458141.jpg" alt="Fernando" width="150">Fernando Alonso<h4>14</h4><h5>Alpine</h5></li>
+                    <li class="esteban"><img src="https://www.formula1.com/content/fom-website/en/drivers/esteban-ocon/_jcr_content/image.img.640.medium.jpg/1617101457663.jpg" alt="Esteban" width="150">Esteban Ocon<h4>31</h4><h5>Alpine</h5></li>
+                    <li class="sebastian"><img src="https://www.formula1.com/content/fom-website/en/drivers/sebastian-vettel/_jcr_content/image.img.640.medium.jpg/1617101458077.jpg" alt="Sebastian" width="150">Sebastian Vettel<h4>5</h4><h5>Aston Martin</h5></li>
+                    <li class="lance"><img src="https://www.formula1.com/content/fom-website/en/drivers/lance-stroll/_jcr_content/image.img.640.medium.jpg/1617101447217.jpg" alt="Lance" width="150">Lance Stroll<h4>18</h4><h5>Aston Martin</h5></li>
+                    <li class="yuki"><img src="https://www.formula1.com/content/fom-website/en/drivers/yuki-tsunoda/_jcr_content/image.img.640.medium.jpg/1617101457751.jpg" alt="Yuki" width="150">Yuki Tsunoda<h4>22</h4><h5>AlphaTauri</h5></li>
+                    <li class="george"><img src="https://www.formula1.com/content/fom-website/en/drivers/george-russell/_jcr_content/image.img.640.medium.jpg/1617101470404.jpg" alt="George" width="150">George Russell<h4>63</h4><h5>Williams</h5></li>
+                    <li class="kimi"><img src="https://www.formula1.com/content/fom-website/en/drivers/kimi-raikkonen/_jcr_content/image.img.640.medium.jpg/1617101460196.jpg" alt="Kimi" width="150">Kimi Raikkonen<h4>7</h4><h5>Alfa Romeo Racing</h5></li>
+                    <li class="nicholas"><img src="https://www.formula1.com/content/fom-website/en/drivers/nicholas-latifi/_jcr_content/image.img.640.medium.jpg/1617101447797.jpg" alt="Nicholas" width="150">Nicholas Latifi<h4>6</h4><h5>Williams</h5></li>
+                    <li class="antonio"><img src="https://www.formula1.com/content/fom-website/en/drivers/antonio-giovinazzi/_jcr_content/image.img.640.medium.jpg/1617101458903.jpg" alt="Antonio" width="150">Antonio Giovinazzi<h4>99</h4><h5>Alfa Romeo Racing</h5></li>
+                    <li class="mick"><img src="https://www.formula1.com/content/fom-website/en/drivers/mick-schumacher/_jcr_content/image.img.640.medium.jpg/1617101458517.jpg" alt="Mick" width="150">Mick Schumacher<h4>47</h4><h5>Haas F1 Racing</h5></li>
+                    <li class="robert"><img src="https://storage.googleapis.com/ecm-prod/assets/1/pilote/3255/robert-kubica_193a74.png" alt="Robert" height="150" width="150">Robert Kubica<h4>88</h4><h5>Alfa Romeo Racing</h5></li>
+                    <li class="nikita"><img src="https://www.formula1.com/content/fom-website/en/drivers/nikita-mazepin/_jcr_content/image.img.640.medium.jpg/1617101458189.jpg" alt="Nikita" width="150">Nikita Mazepin<h4>9</h4><h5>Haas F1 Racing</h5></li>
+                </ol>
+                </h3>
+            </div>
+        </main>
+        <aside class="cele right">
+            <button onclick="topFunction()" id="myArrow" title="Go to top">Top</button>
+        </aside>
         <footer class="cele footer">
-        Designed by Egle Kukucionyte<br>
         </footer>
+        <script src="js/arrowAnimation.js"></script>
     </body>
 </html>

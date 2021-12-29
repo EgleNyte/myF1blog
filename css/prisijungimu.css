@@ -1,0 +1,27 @@
+#logIn, #signUp {
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+#formaLogIn, #formaSignUp {
+    padding: 10px;
+    box-shadow: -10px 10px 30px rgba(0, 0, 0, 0.3);
+    font-size: 16px;
+    transition: .6s;
+    text-align: center;
+}
+
+#orDiv {
+    padding: 50px;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+#formaSignUp:hover, #formaLogIn:hover {
+    background-color: #f3f1ef;
+    color: #413f3d;
+}

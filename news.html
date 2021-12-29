@@ -5,28 +5,155 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/layout.css">
+        <link rel="stylesheet" href="css/newsDesign.css">
+        <link rel="stylesheet" href="css/accountDesign.css">
     </head>
     <body>
         <aside class="cele left">
-
+            <div class="schedule"><br><br><br>
+                <button class="dropbtn">Schedule</button>
+                <div class="dropdown-content">
+                    <a href="https://www.formula1.com/en/racing/2022/Bahrain.html">NEXT: Bahrain 2022</a>
+                    <a href="https://www.formula1.com/en/racing/2022/Saudi_Arabia.html">UPCOMING: Saudi Arabia 2022</a>
+                    <a href="https://www.formula1.com/en/racing/2022/Australia.html">UPCOMING: Australia 2022</a>
+                    <a href="https://www.formula1.com/en/racing/2022/EmiliaRomagna.html">UPCOMING: Italy 2022</a>
+                    <a href="https://www.formula1.com/en/racing/2022/Miami.html">UPCOMING: United States 2022</a>
+                    <a href="https://www.formula1.com/en/racing/2022.html">FULL SCHEDULE 2022...</a>
+                </div>
+            </div>
+            <div class="standings">
+                <button class="dropbtn">Standings</button>
+                <div class="dropdown-content">
+                    <a href="https://www.formula1.com/en/results.html/2021/drivers.html">Driver Standings</a>
+                    <a href="https://www.formula1.com/en/results.html/2021/team.html">Constructor Standings</a>
+                </div>
+            </div>
         </aside>
         <header class="cele header">
-            <div class="navbar">
+            <div class="navbar" id="navbar">
                 <a href="index.html">Home</a>
                 <a href="drivers.html">Drivers</a>
                 <a href="teams.html">Teams</a>
+                <a href="edits.html">Edits</a>
                 <a href="about.html">About</a>
                 <a href="account.html">Account</a>
             </div>
         </header>
         <main class="cele main">
+            <div id="pavadinimas"><h2>Top Stories</h2></div>
+            <div class="topStories">
+                <div class="Story1">
+                    <h4>Giovinazzi on his 3 years in F1:</h4>
+                    <h6>
+                        "I'm leaving for now," he told me as we chatted outside the Alfa Romeo hospitality unit.
+                        "I posted my first picture in a F1 car when I was three years old on my social media.
+                        The last picture [in F1] is not this year.
+                        We saw already many drivers have stopped for one year and come back, like Esteban Ocon and Alex Albon."<br><br>
 
+                        "On my side, I had two years reserve driving for Ferrari in 2017 and 2018 and finally got my chance in 2019.
+                        You never know what will happen in F1.
+                        For now, I want to say thanks to all the people who have supported me in the last three years,
+                        to all the fans who supported me after the news, and to all the drivers here in F1 who texted me.
+                        It's been a great three years."
+                        <br><br><br><hr><br><br>
+                        <img src="images/topStory1.png" height="200" width="220"/>
+                        <br><br><br>
+                        <button onclick="redirectFunction()" id="readMore" title="Read more">Read more...</button>
+                    </h6>
+                </div>
+                <div class="Story2">
+                    <h4>SECRET SANTA: What did the F1 drivers give each other for Christmas this year?</h4>
+                    <h6>Christmas: its the season of giving. And the F1 drivers were clearly feeling generous
+                        this year, as they exchanged presents in the not-particularly-seasonal climes of Abu Dhabi.
+
+                        Paddle racquets seemed to be the in vogue present this season, with both Esteban Ocon and Pierre
+                        Gasly being treated to them by their Secret Santas.<br><br>
+
+                        Click on the button below to see who gave who what this year, as the F1 drivers get stuck into their
+                        Secret Santa.<br><br><hr><br>
+                        <a href="https://www.formula1.com/en/latest/article.secret-santa-what-did-the-f1-drivers-give-each-other-for-christmas-this-year.Dg1krxshlimSPro9TBDVS.html" target="_blank">
+                            <button id="checkVideo">Check video...</button>
+                        </a>
+                    </h6>
+                </div>
+                <div class="Story3">
+                    <h4>REVEALED: F1's team bosses choose their Top 10 drivers of 2021</h4>
+                    <h6>Max Verstappen pipped Lewis Hamilton to the 2021 World Championship to claim his first F1 crown - and he has now picked
+                        up another accolade, as F1's team principals voted the Red Bull racer their number one driver of the year in
+                        our annual poll...<br>
+                        We asked all 10 team bosses to submit their list of the top 10 drivers of the year, under the proviso
+                        that their individual ranking would remain anonymous.
+                        Drivers were awarded scores based on the current F1 points system -
+                        25 for the top driver down to one for 10th in each list. Those scores were combined to create a ranking.<br>
+                        And after clinching his first world title, with a record 18 podiums that included 10 victories,
+                        Verstappen has come out on top for the first time, edging out last year's winner Hamilton by 21 points.
+                        <br><br><hr><br><img src="images/F1cars.png" height="150" width="300"/></h6>
+                    <a href="https://www.formula1.com/en/latest/article.revealed-f1s-team-bosses-choose-their-top-10-drivers-of-2021.1sK8ysV0LK0MIbeNsHAkgY.html" target="_blank">
+                        <button id="readMore2">Read more...</button>
+                    </a>
+                </div>
+            </div>
+            <div id="pavadinimas2"><h2>More News</h2></div>
+            <div id="moreNews">
+                <div class="News1">
+                    <h4>TECH TUESDAY: How Red Bull and Honda cleverly transformed 2020's RB16 into the title-winning RB16B</h4>
+                    <h6>Max Verstappen became the first Red Bull world champion for eight years with his dramatic and
+                        controversial victory in the Abu Dhabi season finale.
+
+                        Aside from Verstappen's personal performances, it was the culmination of years of development from both the
+                        team and their power unit partner Honda. Together they have steadily eroded the previously dominant performance
+                        advantage of the Mercedes team.
+
+                        They have done so with a car - the RB16B - which has remained true to the team's long-established high-rake
+                        aerodynamic concept. This was an extremely effective development of last season's RB16 given the regulatory
+                        freeze restrictions put on everyone for 2021, announced last year in response to the economic challenges of
+                        the pandemic.
+                        <br><br><br><hr><br><br>
+                        <a href="https://www.formula1.com/en/latest/article.tech-tuesday-how-red-bull-and-honda-cleverly-transformed-2020s-rb16-into-the.1iHxI46LM8z3t1fXX7SQBg.html" target="_blank">
+                            <button id="readMore3">Read more...</button>
+                        </a>
+
+                    </h6>
+                </div>
+                <div class="News2">
+                    <br>
+                    <img src="images/hugF1.png" height="200" width="230"/><br><hr>
+                    <h4>PALMER: Whatever you thought of the Abu Dhabi outcome, Verstappen was a worthy champion in 2021</h4>
+                    <h6>The dramatic late Safety Car in Abu Dhabi ended up deciding the championship, and the manner it was
+                        brought in has sparked much debate and controversy at the end of a highly dramatic season.
+
+                        On the one hand we had the mouth-watering finale that Formula 1 has likely never seen before - the
+                        championship being decided with two drivers battling for Grand Prix victory on the final lap of the
+                        season, with the winner being crowned champion. All of this including a brilliant bout of wheel-to-wheel
+                        scrapping lasting a third of a lap, with the cars separated by paper widths on a few occasions.
+                        <br><br><hr><br>
+                        <a href="https://www.formula1.com/en/latest/article.palmer-whatever-you-thought-of-the-abu-dhabi-outcome-verstappen-was-a-worthy.6RkHgJTJgx8HjlqwPraGo0.html" target="_blank">
+                            <button id="readMore4">Read more...</button>
+                        </a>
+                    </h6>
+                </div>
+                <div class="News3">
+                    <h4>WATCH: The top 10 overtakes of the 2021 Formula 1</h4>
+                    <h6>
+                        <iframe width="310" height="180" src="https://www.youtube.com/embed/AbgOB8CHnvA">
+                    </iframe>
+                        <br><br><hr><br><br>
+                        Click below to watch more moments:<br><br>
+                        <a href="https://www.formula1.com/en/latest/article.watch-the-10-best-overtakes-of-2021-featuring-verstappen-tsunoda-ricciardo.6zqt9sIRzOUoBVsSiDpadv.html" target="_blank">
+                            <button id="checkMore">Check more...</button>
+                        </a>
+                    </h6>
+                </div>
+            </div>
+            <button id="loadMoree">Load More...</button>
         </main>
         <aside class="cele right">
-
+            <button onclick="topFunction()" id="myArrow" title="Go to top">Top</button>
         </aside>
         <footer class="cele footer">
-            Designed by Egle Kukucionyte<br>
         </footer>
+        <script src="js/arrowAnimation.js"></script>
+        <script src="js/redirectFunction.js"></script>
+        <script src="js/loadMore.js"></script>
     </body>
 </html>

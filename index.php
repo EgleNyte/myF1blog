@@ -10,7 +10,7 @@
          <nav class="navMenu">
             <a href="news.html" class="news">News</a>
             <a href="drivers.html" class="drivers">Drivers</a>
-            <a href="teams.html" class="teams">Teams</a>
+             <a href="edits.html" class="edits">Edits</a>
             <a href="about.html" class="about">About</a>
         </nav>
     </body>

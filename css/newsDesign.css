@@ -1,0 +1,285 @@
+/*#navbar {*/
+/*    position: fixed;*/
+/*    transition: top 0.3s;*/
+/*    background-color: #f3f1ef;*/
+/*    width: 100%;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*}*/
+
+.topStories {
+    display: grid;
+    grid-template-rows: 300px 300px;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-gap: 40px;
+    text-align: center;
+    /*font-family: "Montserrat", sans-serif;*/
+    font-size: 20px;
+    color: #413f3d;
+    padding: 30px;
+    /*text-transform: uppercase;*/
+    grid-template-areas:
+    'a b c'
+    'a b c'
+}
+
+.Story1 {
+    grid-area: a;
+    background-color: #f3f1ef;
+    box-shadow: -10px 10px 30px rgba(0, 0, 0, 0.3);
+    transition: .5s;
+}
+
+.Story2 {
+    grid-area: b;
+    background-color: #f3f1ef;
+    box-shadow: -10px 10px 30px rgba(0, 0, 0, 0.3);
+    transition: .5s;
+}
+
+.Story3 {
+    grid-area: c;
+    background-color: #f3f1ef;
+    box-shadow: -10px 10px 30px rgba(0, 0, 0, 0.3);
+    transition: .5s;
+}
+
+#moreNews {
+    display: grid;
+    grid-template-rows: 300px 300px;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-gap: 40px;
+    text-align: center;
+    /*font-family: "Montserrat", sans-serif;*/
+    font-size: 20px;
+    color: #413f3d;
+    padding: 30px;
+    /*text-transform: uppercase;*/
+    grid-template-areas:
+    'q w e'
+    'q w e'
+}
+
+.News1 {
+    grid-area: q;
+    background-color: #f3f1ef;
+    box-shadow: -10px 10px 30px rgba(0, 0, 0, 0.3);
+    transition: .5s;
+}
+
+.News2 {
+    grid-area: w;
+    background-color: #f3f1ef;
+    box-shadow: -10px 10px 30px rgba(0, 0, 0, 0.3);
+    transition: .5s;
+}
+
+.News3 {
+    grid-area: e;
+    background-color: #f3f1ef;
+    box-shadow: -10px 10px 30px rgba(0, 0, 0, 0.3);
+    transition: .5s;
+}
+
+.Story1:hover, .Story2:hover, .Story3:hover, .News1:hover, .News2:hover, .News3:hover {
+    background-color: #f3f1ef;
+    box-shadow: none;
+}
+
+#pavadinimas, #pavadinimas2 {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    color: #413f3d;
+    padding: 30px;
+    text-transform: uppercase;
+}
+
+.topStories h4, #moreNews h4 {
+    text-transform: uppercase;
+
+}
+
+#readMore, #checkVideo, #readMore2, #readMore3, #readMore4, #checkMore {
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: #413f3d;
+    color: #f3f1ef;
+    border: none;
+    outline: none;
+    font-size: 10px;
+    transition: 0.4s;
+    transition-timing-function: ease;
+}
+
+#readMore:hover, #checkVideo:hover, #readMore2:hover, #readMore3:hover, #readMore4:hover, #checkMore:hover {
+    background-color: #b1a6a4;
+    font-size: 10px;
+    padding: 10px;
+}
+
+#loadMoree {
+    margin: 50px auto 0px;
+    display: table;
+    border: none;
+    padding: 10px 10px;
+    font-size: 10px;
+    cursor: pointer;
+    color: #f3f1ef;
+    background-color: #413f3d;
+    text-transform: uppercase;
+    transition: .4s;
+}
+
+#loadMoree:hover {
+    background-color: #b1a6a4;
+    padding: 14px 14px;
+}
+
+/* Extra maži įrenginiai (telefonai, 600px ir žemiau) */
+@media only screen and (max-width: 600px) {
+    #moreNews {
+        display: none;
+    }
+    .topStories {
+        width: 100%;
+        display: grid;
+        grid-template-rows: 3fr 3fr 3fr;
+        grid-template-columns: 2fr 2fr 2fr;
+        grid-gap: 40px;
+        text-align: center;
+        /*font-family: "Montserrat", sans-serif;*/
+        font-size: 20px;
+        color: #413f3d;
+        padding: 30px;
+        /*text-transform: uppercase;*/
+        grid-template-areas:
+    'a a a'
+    'b b b'
+    'c c c'
+    }
+    #pavadinimas2 {
+        display: none;
+    }
+}
+
+/* Maži įrenginiai (statmenos planšetės, ar gulsti telefonai 600px ir aukščiau) */
+@media only screen and (min-width: 600px) {
+    #moreNews {
+        display: none;
+    }
+    .topStories {
+        width: 100%;
+        display: grid;
+        grid-template-rows: 3fr 3fr 3fr;
+        grid-template-columns: 2fr 2fr 2fr;
+        grid-gap: 40px;
+        text-align: center;
+        /*font-family: "Montserrat", sans-serif;*/
+        font-size: 20px;
+        color: #413f3d;
+        padding: 30px;
+        /*text-transform: uppercase;*/
+        grid-template-areas:
+    'a a a'
+    'b b b'
+    'c c c'
+    }
+    #pavadinimas2 {
+        display: none;
+    }
+}
+
+/* Vidutiniai įrenginiai (gulsčios planšetės ar maži laptopai, 768px ir aukščiau) */
+@media only screen and (min-width: 768px) {
+    .topStories {
+        width: 100%;
+        display: grid;
+        grid-template-rows: 3fr 3fr;
+        grid-template-columns: 2fr 2fr 2fr;
+        grid-gap: 40px;
+        text-align: center;
+        /*font-family: "Montserrat", sans-serif;*/
+        font-size: 20px;
+        color: #413f3d;
+        padding: 30px;
+        /*text-transform: uppercase;*/
+        grid-template-areas:
+    'a b c'
+    'a b c'
+    }
+
+}
+
+/* Dideli įrenginiai (laptopai, staliniai PC, 992px ir aukščiau) */
+@media only screen and (min-width: 992px) {
+    .topStories {
+        display: grid;
+        grid-template-rows: 300px 300px;
+        grid-template-columns: 2fr 2fr 2fr;
+        grid-gap: 40px;
+        text-align: center;
+        /*font-family: "Montserrat", sans-serif;*/
+        font-size: 20px;
+        color: #413f3d;
+        padding: 30px;
+        /*text-transform: uppercase;*/
+        grid-template-areas:
+    'a b c'
+    'a b c'
+    }
+    #moreNews {
+        display: grid;
+        grid-template-rows: 300px 300px;
+        grid-template-columns: 2fr 2fr 2fr;
+        grid-gap: 40px;
+        text-align: center;
+        /*font-family: "Montserrat", sans-serif;*/
+        font-size: 20px;
+        color: #413f3d;
+        padding: 30px;
+        /*text-transform: uppercase;*/
+        grid-template-areas:
+    'q w e'
+    'q w e'
+    }
+}
+
+/* Extra dideli įrenginiai (dideli laptopai ir stalinai PC, 1200px ir aukščiau) */
+@media only screen and (min-width: 1200px) {
+    .topStories {
+        display: grid;
+        grid-template-rows: 300px 300px;
+        grid-template-columns: 2fr 2fr 2fr;
+        grid-gap: 40px;
+        text-align: center;
+        /*font-family: "Montserrat", sans-serif;*/
+        font-size: 20px;
+        color: #413f3d;
+        padding: 30px;
+        /*text-transform: uppercase;*/
+        grid-template-areas:
+    'a b c'
+    'a b c'
+    'a b c'
+    }
+    #moreNews {
+        display: grid;
+        grid-template-rows: 3fr 3fr;
+        grid-template-columns: 2fr 2fr 2fr;
+        grid-gap: 40px;
+        text-align: center;
+        /*font-family: "Montserrat", sans-serif;*/
+        font-size: 20px;
+        color: #413f3d;
+        padding: 30px;
+        /*text-transform: uppercase;*/
+        grid-template-areas:
+    'q w e'
+    'q w e'
+    'q w e'
+    }
+    #pavadinimas2 {
+        display: inline-block;
+    }
+}

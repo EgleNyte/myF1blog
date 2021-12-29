@@ -1,0 +1,41 @@
+.driversListing li {
+    display: inline-grid;
+    padding: 70px;
+    font-family: "Montserrat", sans-serif;
+    color: #413f3d;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 30;
+}
+
+/*#navbar {*/
+/*    position: fixed;*/
+/*    transition: top 0.3s;*/
+/*    background-color: #f3f1ef;*/
+/*    width: 100%;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*}*/
+
+.max, .lewis, .valtteri, .sergio, .carlos, .lando, .charles, .daniel, .pierre, .fernando, .esteban, .sebastian, .lance, .yuki, .george, .kimi, .nicholas, .antonio, .mick, .robert, .nikita {
+    /*overflow: hidden;*/
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.max img, .lewis img, .valtteri img, .sergio img, .carlos img, .lando img, .charles img, .daniel img, .pierre img, .fernando img, .esteban img, .sebastian img, .lance img, .yuki img, .george img, .kimi img, .nicholas img, .antonio img, .mick img, .robert img, .nikita img {
+    transition: 0.8s all ease-in-out;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.max img:hover, .lewis img:hover, .valtteri img:hover, .sergio img:hover, .carlos img:hover, .lando img:hover, .charles img:hover, .daniel img:hover, .pierre img:hover, .fernando img:hover, .esteban img:hover, .sebastian img:hover, .lance img:hover, .yuki img:hover, .george img:hover, .kimi img:hover, .nicholas img:hover, .antonio img:hover, .mick img:hover, .robert img:hover, .nikita img:hover {
+    transform: scale(2.5);
+    box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.8);
+}
+
+.max:hover, .lewis:hover, .valtteri:hover, .sergio:hover, .carlos:hover, .lando:hover, .charles:hover, .daniel:hover, .pierre:hover, .fernando:hover, .esteban:hover, .sebastian:hover, .lance:hover, .yuki:hover, .george:hover, .kimi:hover, .nicholas:hover, .antonio:hover, .mick:hover, .robert:hover, .nikita:hover {
+    box-shadow: none;
+}
+
+
+
